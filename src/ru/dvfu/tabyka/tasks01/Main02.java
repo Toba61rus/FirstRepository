@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main02 {
     public static void main(String[] args) {
         Scanner g = new Scanner(System.in);
-        System.out.println("Ввеедите двузначное число");
+        System.out.println("Введите двузначное число");
         int x = g.nextInt();
 
         if (x<10 ){                                     // Как задать несколько условий оператором???

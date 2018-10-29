@@ -6,11 +6,11 @@ public class Main01 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите щначение х:");
+        System.out.println("Введите значение х:");
         int x = in.nextInt();
         System.out.println("Введите значение у");
         int y = in.nextInt();
         int z = x + y;
-        System.out.println("Сумма введенных чисел х+у =" + z);
+        System.out.println("Сумма введенных чисел х + у =" + z);
     }
 }
