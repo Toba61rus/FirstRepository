@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main04 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        System.out.println("Данная программа вычисляет среднее арифмитическое введённых с клавиатуры трёх  чисел ");
         System.out.println("Ведите первое вещественное число");
         float x = s.nextInt();
         System.out.println("Введите второе вещественное число");
