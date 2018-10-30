@@ -10,8 +10,8 @@ public class Main10 {
         System.out.println(" Введите второе слагаемое b ");
         double b = s.nextDouble();
         double S = a + b;
-        System.out.println(" Сумма слагаемых составляет " + S );
-        System.out.println(" Введите число, процент которого хотели бы отсчитать от полученного числа S (ввелённое число должно быть натуральным и не больше числа S ) ");
+        System.out.println(" Сумма слагаемых составляет S " + S );
+        System.out.println(" Введите число, процент которого хотели бы вычислить от полученного числа S (ввелённое число должно быть натуральным и не более числа S ) ");
         double p = s.nextDouble();
         double procent = p * 100 / S;
         System.out.println(" Процент числа P от полученной суммы составляет " + procent + " % " );

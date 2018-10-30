@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Main08 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Данная программа переводит рубли в доллары и евро");
-        System.out.println(" Пожалуйста, введите количество рублей, которое хотели бы перевести в доллары и евро ");
+        System.out.println(" Данная программа переводит рубли в доллары и евро");
+        System.out.println(" Введите количество рублей, которое хотите перевести в доллары и евро ");
         double g = s.nextDouble();
         double x = g /65.56;
         double y = g /74.67;
