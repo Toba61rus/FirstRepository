@@ -10,7 +10,7 @@ final double pi = 3.14;
 Scanner s = new Scanner(System.in);
         System.out.println(" Укажите радиус " );
 double r = s.nextDouble();
-        System.out.println(" При радиусе " + r + "длина окружности равна " + 2 * pi * r );
+        System.out.println(" При радиусе " + r + " длина окружности равна " + 2 * pi * r );//S =2 pi r (r в квадрате)
         System.out.println(" Площадь круга составляет " + pi * Math.pow(r , 2));
     }
 }
