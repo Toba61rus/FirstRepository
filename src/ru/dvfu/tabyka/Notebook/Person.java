@@ -11,19 +11,12 @@ public class Person {         //Запишем поля записной кни�
 
     public Person(){   //Пустой конструктор
             }
-    public Person(String fn, String ln, String mN ){
-
-    }
+    public Person(String fn, String ln, String mN ){ }   // Конструктор с параметрами Фамилия, Имя и Отчество.
     public void info (){ // Метод вывода на экран информации о контакте.
-        System.out.println(getFirstName());
-        System.out.println(getLastName());
-        System.out.println(getMiddleName());
-        /*getGender();
-        getEmail();
-        getNumberPhones();
-        getListAddress();*/
-    }
-    //Внесём методы
+
+
+
+            }
 
     public void addPhoneNumber() {  } //Метод добавления
 
@@ -40,62 +33,61 @@ public class Person {         //Запишем поля записной кни�
     public void showAddresses() { }  //Метод показа адресса
 
     //Сеттеры и геттеры для наших полей
-  public String getFirstName() {
-            return firstName;
-        }
 
-        public void setFirstName ( ) {
-            this.firstName = firstName;
-        }
-
-        public String getLastName() {
-            return lastName;
-        }
-
-        public void setLastName() {
-            this.lastName = lastName;
-        }
-
-        public String getMiddleName() {
-            return middleName;
-        }
-
-        public void setMiddleName() {
-            this.middleName = middleName;
-
-    }
 
     public String getGender() {
         return gender;
     }
 
-    public void setGender() {
+    public void setGender(String gender) {
         this.gender = gender;
     }
-
     public String getEmail() {
         return email;
     }
 
-    public void setEmail() {
+    public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String[] getNumberPhones() {
-        return numberPhones;
-    }
-
-    public void setNumberPhones() {
-        this.numberPhones = numberPhones;
     }
 
     public String[] getListAddress() {
         return listAddress;
     }
 
-    public void setListAddress() {
+    public void setListAddress(String[] listAddress) {
         this.listAddress = listAddress;
+    }
+    public String[] getNumberPhones() {
+        return numberPhones;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
 
-}
+
+    public String getFirstName() {
+
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setNumberPhones(String[] numberPhones) {
+        this.numberPhones = numberPhones;
+        }
+    }
