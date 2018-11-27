@@ -1,95 +1,104 @@
 package ru.dvfu.tabyka.Notebook;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        ArrayList<Object> list = new ArrayList(2);
+        list.add();
+        for (int i=0; i<list.size(); i++);
+
+
         Person kolya = new Person("Николай ", "Пулев", "Владимирович");
-        kolya.info();    //Метод вывода информации (Фамилии,имени и отчества) пользователя заданных конструктором.
-        System.out.println(kolya.getFirstName());
-        System.out.println(kolya.getLastName());
-        System.out.println(kolya.getMiddleName());
-        //Введём данные о пользователях через сеттеры и выведем на экран через геттеры.
-        kolya.setGender("мужской");
+        System.out.println(kolya.toString()); //Метод вывода информации (Фамилии,имени и отчества) пользователя заданных конструктором.
+
+    //Введём данные о пользователях через сеттеры и выведем на экран через геттеры.
+        { kolya.setGender("мужской");
         kolya.setEmail("kolay34@mil.ru");
-        String[] phones = {"75857"};
-        kolya.setNumberPhones(phones);
-        String[] address = {" ddsdfsfsd "};
+        String [ ] address = {"Мохнатова 12"};
         kolya.setListAddress(address);
+        String [] phones = {"8-950-564-98-45"};
+        kolya.setNumberPhones(phones);
         System.out.println(kolya.getGender());
         System.out.println(kolya.getEmail());
-        System.out.println(kolya.getNumberPhones());
-        System.out.println(kolya.getListAddress());
+        System.out.println(phones.toString());
+        System.out.println(address.toString());}
 
 
-        Person valay = new Person("Валентина", "Пушкина", "Сергеевна");
-        valay.info();  //Метод вывода информации (Фамилии,имени и отчества) пользователя
-        System.out.println(valay.getLastName());
-        System.out.println(valay.getFirstName());
-        System.out.println(valay.getMiddleName());
+        {Person valay = new Person("Валентина", "Пушкина","Сергеевна");
+       //Метод вывода информации (Фамилии,имени и отчества) пользователя
+            System.out.println(valay.toString());
 
         //Введём данные о пользователях через сеттеры и выведие на экран через геттеры.
-        /*valay.setGender("женский");
+        valay.setGender("женский");
         valay.setEmail("valay234gmail.com");
-        valay.setNumberPhones("8-904-589-21-23");
-        valay.setListAddress("Захарова 23");
+        String [] phones ={"8-904-589-21-23"};
+        valay.setNumberPhones(phones);
+        String [] address = {"Захарова 32"};
+        valay.setListAddress(address);
         System.out.println(valay.getGender());
         System.out.println(valay.getEmail());
-        System.out.println(valay.getNumberPhones());
-        System.out.println(valay.getListAddress());
+            System.out.println(phones);
+            System.out.println(address);}
 
 
-        Person katya=new Person("Екатерина", "Кобанова", "Витальевна");
-        katya.info(); //Метод вывода информации (Фамилии,имени и отчества) пользователя
-        System.out.println(katya.getLastName());
-        System.out.println(katya.getFirstName());
-        System.out.println(katya.getMiddleName());
+
+        {Person katya=new Person("Екатерина", "Кобанова", "Витальевна");
+        //Метод вывода информации (Фамилии,имени и отчества) пользователя
+            System.out.println(katya.toString());
+
         //Введём данные о пользователях через сеттеры и выведем на экран через геттеры.
         katya.setGender("женский");
         katya.setEmail("kobanova92@mail.ru");
-        katya.setNumberPhones("8-988-564-42-12");
-        katya.setListAddress("Калинина 123");
+        String [] phones ={"8-988-564-42-12"};
+        katya.setNumberPhones(phones);
+        String [] adress = {"Калинина 123"};
+        katya.setListAddress(adress);
         System.out.println(katya.getGender());
         System.out.println(katya.getEmail());
-        System.out.println(katya.getNumberPhones());
-        System.out.println(katya.getListAddress());
+            System.out.println(phones);
+            System.out.println(adress);}
+
 
 
         Person vitalya= new Person("Виталий","Колпачков","Сергеевич");
-        vitalya.info(); //Метод вывода информации (Фамилии,имени и отчества) пользователя
-        System.out.println(vitalya.getFirstName());
-        System.out.println(vitalya.getLastName());
-        System.out.println(vitalya.getMiddleName());
+       //Метод вывода информации (Фамилии,имени и отчества) пользователя
+        System.out.println(vitalya.toString());
+
 
         //Введём данные о пользователях через сеттеры и выведем на экран через геттеры.
         vitalya.setGender("мужской");
         vitalya.setEmail("vital52@mail.ru");
-        vitalya.setNumberPhones("8-967-988-16-46");
-        vitalya.setListAddress("Бакланвоа 21");
+        String [] phones = {"8-967-988-16-46"};
+        vitalya.setNumberPhones(phones);
+        String [] address = {"Бакланова 21"};
+        vitalya.setListAddress(address);
         System.out.println(vitalya.getGender());
         System.out.println(vitalya.getEmail());
-        System.out.println(vitalya.getNumberPhones());
-        System.out.println(vitalya.getListAddress());
+        System.out.println(phones);
+        System.out.println(address);}
 
 
-        Person dima= new Person("Дмитрий", "Табыйка","Владимирович");
-        dima.info();    //Метод вывода информации (Фамилии,имени и отчества) пользователя
-        System.out.println(dima.getFirstName());
-        System.out.println(dima.getLastName());
-        System.out.println(dima.getMiddleName());
+        {Person dima= new Person("Дмитрий", "Табыйка","Владимирович");
+           //Метод вывода информации (Фамилии,имени и отчества) пользователя
+            System.out.println(dima.toString());
+
         //Введём данные о пользователях через сеттеры и выведем на экран через геттеры.
+
         dima.setGender("мужской");
         dima.setEmail("toba92@mail.ru");
-        dima.setListAddress("Верхнепортовая 76(А)., кв.20 ");
-        dima.setNumberPhones("8-950-291-23-36");
+        String [] address ={"Верхнепортовая 76(А)., кв.20 "};
+        dima.setListAddress(address);
+        String [] phones ={"8-950-291-23-36"};
+        dima.setNumberPhones(phones);
         System.out.println(dima.getGender());
         System.out.println(dima.getEmail());
-        System.out.println(dima.getNumberPhones());
-        System.out.println(dima.getListAddress());
-    }*/
-   /* public String toString(){
-        return*/
+        System.out.println(address);
+        System.out.println(phones);}
 
     }
-}
+
+
+
 
 
 
